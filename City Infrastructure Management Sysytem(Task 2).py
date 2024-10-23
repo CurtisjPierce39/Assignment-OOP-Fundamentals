@@ -5,7 +5,6 @@ class Event:
         self.name = name
         self.date = date
         self.participant_count = 0
-        # self.participants = []
         
     def add_participant(self):
         self.participant_count += 1
@@ -16,8 +15,6 @@ class Event:
     
     def display_count(self):
         print(f"Event: {self.name}, Date: {self.date}, Number of participants: {self.participant_count}")
-        # print("Participants =" ,', '.join(self.participants))
-
 
 first_event = Event("Toy Drive", "10-31-2002")
 second_event = Event("Food Drive", "02-15-1986")
